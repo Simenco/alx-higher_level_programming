@@ -5,6 +5,6 @@
 
 def pow(a, b):
     if b == 0:
-        return a
+        return 1
     res = a * pow(a, b - 1)
     return (res)

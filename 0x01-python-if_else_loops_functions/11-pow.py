@@ -6,7 +6,8 @@
 def pow(a, b):
     if b < 0:
         b = abs(b)
-        return (1 // pow(a, b) 
+        res = pow(a, b)
+        return (1 / res)
     if b == 0:
         return 1
     res = a * pow(a, b - 1)

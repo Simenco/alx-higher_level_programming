@@ -8,4 +8,4 @@ def uppercase(str):
         if (char in range(97, 123)):
             c = chr(char - 32)
         print("{}".format(c), end="")
-    #print("")
+    print(" ")

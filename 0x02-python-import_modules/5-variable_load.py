@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-this program prints the variable a from a file 
+this program prints the variable a from a file
 and prints its value
 
 """

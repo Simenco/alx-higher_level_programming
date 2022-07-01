@@ -19,5 +19,5 @@ if __name__ == "__main__":
     else:
         print("{} arguments:".format(num of elements))
 
-    for arg in range(num_of_elements):
-        print("{}: {}".format(arg + 1, sys.argv[arg + 1]))
+    for a in range(num_of_elements):
+        print("{}: {}".format(a + 1, sys.argv[a + 1]))

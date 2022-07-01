@@ -14,7 +14,7 @@ if __name__ == "__main__":
         print("0 arguments.")
 
     elif n == 2:
-        print("1 arguments:")
+        print("1 argument:")
 
     else:
         print("{} arguments:".format(n - 1))

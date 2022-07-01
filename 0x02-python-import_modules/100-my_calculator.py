@@ -21,7 +21,7 @@ if __name__ == "__main__":
     operators = {"+": add, "-": sub, "*": mul, "/": div}
 
     if operator not in list(operators.keys()):
-        print("Unknown operator, Available operators: +, -, * and /")
+        print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
 
     print("{} {} {} = {}".format(a, operator, b, operators[operator](a, b)))

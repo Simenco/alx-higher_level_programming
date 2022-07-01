@@ -12,5 +12,5 @@ if __name__ == "__main__":
     num_of_elements = len(sys.argv) - 1
 
     for a in range(num_of_elements):
-        total += sys.argv[a + 1]
+        total += int(sys.argv[a + 1])
         print("{}".format(total))

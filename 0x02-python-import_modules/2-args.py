@@ -14,7 +14,7 @@ if __name__ == "__main__":
         print("0 arguments.")
 
     elif num_of_elements == 1:
-        print("1 arguments.")
+        print("1 arguments:")
 
     else:
         print("{} arguments:".format(num of elements))

@@ -12,27 +12,16 @@ if __name__ == "__main__":
     n = len(sys.argv)
 
     if n != 4:
-        print("Usage: ./100-my_calculator.py a operator b\n")
+        print("Usage: ./100-my_calculator.py a operator b")
         sys.exit(1)
 
     a = int(sys.argv[1])
     operator = sys.argv[2]
     b = int(sys.argv[3])
-    operators = ["+", "-", "*", "/"]
-        
-    if operator not in operators:
-        print("unknown operator, Available operators: +, -, * and /\n")
+    operators = {"+": add, "-": sub, "*": mul, "/": div}
+
+    if operator not in list(operators.keys()):
+        print("Unknown operator, Available operators: +, -, * and /")
         sys.exit(1)
 
-    if operator == "+":
-        res = add(a, b)
-
-    elif operator == "-":
-        res = sub(a, b)
-
-    elif operator == "*":
-        res = mul(a, b)
-
-    else:
-        res = div(a, b)
-    print("{} {} {} = {}".format(a, operator, b, res))
+    print("{} {} {} = {}".format(a, operator, b, operators[operator](a, b)))

@@ -9,8 +9,8 @@ if __name__ == "__main__":
     import sys
 
     total = 0
-    num_of_elements = len(sys.argv) - 1
+    n = len(sys.argv)
 
-    for a in range(num_of_elements):
-        total += int(sys.argv[a + 1])
-        print("{}".format(total))
+    for a in range(1, n):
+        total += int(sys.argv[a])
+    print("{}".format(total))

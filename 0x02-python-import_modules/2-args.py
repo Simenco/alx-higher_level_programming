@@ -8,7 +8,7 @@ its arguments
 if __name__ == "__main__":
     import sys
 
-    num_of_elements = len(argv) - 1
+    num_of_elements = len(sys.argv) - 1
 
     if num_of_elements == 0:
         print("0 arguments.")

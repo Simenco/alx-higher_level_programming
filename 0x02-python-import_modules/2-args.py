@@ -8,16 +8,16 @@ its arguments
 if __name__ == "__main__":
     import sys
 
-    num_of_elements = len(sys.argv) - 1
+    n = len(sys.argv)
 
-    if num_of_elements == 0:
+    if n == 1:
         print("0 arguments.")
 
-    elif num_of_elements == 1:
+    elif n == 2:
         print("1 arguments:")
 
     else:
-        print("{} arguments:".format(num of elements))
+        print("{} arguments:".format(n - 1))
 
-    for a in range(num_of_elements):
-        print("{}: {}".format(a + 1, sys.argv[a + 1]))
+    for a in range(1, n):
+        print("{}: {}".format(a, sys.argv[a]))

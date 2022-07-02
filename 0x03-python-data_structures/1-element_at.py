@@ -16,4 +16,3 @@ def element_at(my_list, idx):
     for a in range(ele):
         if idx == a:
             return (my_list[idx])
-

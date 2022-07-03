@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-this function prints alli integers of a list, 
+this function prints alli integers of a list,
 in reverse order, one integer per line
 """
 

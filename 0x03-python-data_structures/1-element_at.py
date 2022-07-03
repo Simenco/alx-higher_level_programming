@@ -10,7 +10,7 @@ def element_at(my_list, idx):
         return None
     ele = len(my_list) - 1
 
-    if idx > ele:
+    if idx > len(my_list):
         return None
 
     for a in range(ele):

@@ -6,7 +6,7 @@ at a specific position without modifying the original list
 """
 
 
-def replace_in_list(my_list, idx, element):
+def new_in_list(my_list, idx, element):
     ele = len(my_list)
     if (idx < 0) or (idx >= ele):
         return my_list

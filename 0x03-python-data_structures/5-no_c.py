@@ -8,7 +8,6 @@ returns the new string.
 
 def no_c(my_string):
     n = len(my_string)
-    for i in range(n):
-        j = my_string[i]
-        new_str = ''.join([j for i in range(n) if j not in 'cC'])
-        return new_str
+    j = my_string
+    new_str = ''.join([j[i] for i in range(n) if j[i] not in 'cC'])
+    return new_str

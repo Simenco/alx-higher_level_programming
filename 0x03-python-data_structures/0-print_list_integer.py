@@ -7,5 +7,5 @@ format: one integer per line withput importing any module
 
 
 def print_list_integer(my_list=[]):
-    for a in my_list:
-        print("{:d}".format(a))
+    for a in range(len(my_list)):
+        print("{:d}".format(my_list[a]))

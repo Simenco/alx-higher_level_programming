@@ -40,7 +40,7 @@ int check_cycle(listint_t *list)
 
 	n = list_len(list);
 
-	if (n <= 2)
+	if (n < 2)
 		return (0);
 
 	iterator1 = list;

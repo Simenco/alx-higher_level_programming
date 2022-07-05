@@ -1,6 +1,24 @@
 #include "lists.h"
 
 /**
+ * list_len - function
+ * @h: input list
+ *
+ * Return: number of elements in a list
+ */
+unsigned int list_len(const listint_t *h)
+{
+	unsigned int n;
+
+	for (n = 0; h; n++)
+	{
+		h = h->next;
+	}
+	return (n);
+
+} 
+
+/**
  * check_cycle - this function checks if a singly linked list has a cycle in it
  * @list: a linked list to be checked
  *
@@ -9,6 +27,7 @@
 
 int check_cycle(listint_t *list)
 {
+	unsigned int n;
 
 	/* this approach uses two pointers to iterate through the list */
 
@@ -17,6 +36,11 @@ int check_cycle(listint_t *list)
 
 	/* check if the list is not empty */
 	if (list == NULL)
+		return (0);
+
+	n = list_len(list);
+
+	if (n <= 2)
 		return (0);
 
 	iterator1 = list;

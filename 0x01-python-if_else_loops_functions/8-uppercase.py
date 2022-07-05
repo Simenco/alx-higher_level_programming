@@ -7,4 +7,3 @@ def uppercase(str):
         if ord(c) in range(97, 123):
             c = chr(ord(c) - 32)
         print("{}".format(c), end="")
-    print("")

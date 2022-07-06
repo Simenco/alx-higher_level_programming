@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-this function returns a dictionary with 
+this function returns a dictionary with
 all values multiplied by 2
 """
 

@@ -7,7 +7,4 @@ the two sets
 
 
 def common_elements(set_1, set_2):
-    for a in  set_1:
-        for b in set_2:
-            if a == b:
-                return a
+    return (set_1 & set_2)

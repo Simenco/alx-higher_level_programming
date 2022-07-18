@@ -3,8 +3,9 @@
 def safe_print_division(a, b):
 
     try:
-        print("{:d}".format(a/b)
+        result = a / b
     except (ArithmeticError, TypeError):
-        None
+        result = None
     finally:
-        print("{}".format(a//b))
+        print("Inside result: {}".format(result))
+    return (result)

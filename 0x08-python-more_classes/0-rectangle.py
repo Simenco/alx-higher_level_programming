@@ -2,6 +2,7 @@
 
 """An empty rectangle class"""
 
+
 class Rectangle:
     """this is a rectangleclass"""
     pass

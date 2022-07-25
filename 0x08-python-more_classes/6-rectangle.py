@@ -6,6 +6,8 @@
 class Rectangle:
     """this is a rectangleclass"""
 
+    instances_count = 0
+
     def __init__(self, width=0, height=0):
         """Initializes a new Rectangle.
 
@@ -75,5 +77,5 @@ class Rectangle:
 
     def __del__(self):
         """a message for every deletion of a rectangle"""
-        type(self).number_of_instances -= 1
+        type(self).instances_count -= 1
         print("Bye rectangle...")

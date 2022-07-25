@@ -4,7 +4,11 @@
 
 
 class Rectangle:
-    """this is a rectangleclass"""
+    """this is a rectangle class
+
+    Attributes:
+        instances_count (int): number of rectangle instances
+    """
 
     instances_count = 0
 
